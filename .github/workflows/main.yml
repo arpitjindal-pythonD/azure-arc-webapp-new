@@ -22,9 +22,6 @@ jobs:
         run: |
           cd azure-arc-jumpstart-app
           npm install
-
-      - name: Build
-        run: |
           npm run build
 
       - name: Deploy
