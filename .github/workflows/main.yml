@@ -19,10 +19,13 @@ jobs:
           node-version: 14
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd azure-arc-jumpstart-app
+          npm install
 
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
 
       - name: Deploy
         run: |
